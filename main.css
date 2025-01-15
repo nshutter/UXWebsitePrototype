@@ -1,0 +1,285 @@
+html, body{
+    margin:0;
+    font-family:"Arial", sans-serif;
+}
+
+/*
+ Primary Color - #40E0D0 - Ocean Water
+ Secondary Color - #FF4500 - Sunset
+ Tertiary Color - #F4A460 - Sand
+ */
+
+.bodyGrid {
+    height:100vh; 
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    background-color:#00D0BB;
+}
+
+.nav{
+    grid-column-start: 1;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color:#9DECE3;
+    margin:1em 1em 0em 1em;
+}
+
+.nav:hover{
+    outline-style:solid;
+    outline-color:#F4A460;
+}
+
+.headerButton{
+    margin:.5em .5em .25em .5em;
+    padding:.75em .75em .75em .75em;
+
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    line-height: 1;
+    border-radius: 500px;
+    transition-property: background-color,border-color,color,box-shadow,filter;
+    transition-duration: .3s;
+    border: 1px solid transparent;
+    letter-spacing: 2px;
+    text-decoration:none;
+    white-space: normal;
+    font-weight: 700;
+
+    text-align: center;
+    color: #ffff;
+    background-color: #FF4500;
+}
+
+.headerButton:hover{
+    background-color: #CC2200;
+    outline-style:solid;
+    outline-color:#F4A460;
+}
+
+.pageContent
+{
+    grid-row-start: 2;
+    grid-column-start: 3;
+    grid-row-end: 10;
+    grid-column-end: 8;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainHeading{
+    margin:.5em;
+    padding:.75em;
+    color:#FF4500;
+    font-size: 2.5em;
+    border-radius: 10px;
+    background-color:#9DECE3;
+}
+
+.sectionContent{
+    margin:1em;
+    padding-left:1em;
+    padding-right:1em;
+    background-color: #9DECE3;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.tourismSectionContent{
+    margin:1em;
+    padding-left:1em;
+    padding-right:1em;
+    background-color: #9DECE3;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr 1fr;
+}
+
+.tourismSectionTopLeft{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tourismSectionTopRight{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.tourismSectionBottomHalf{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    display:flex;
+    flex-direction: column;
+
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tourismListItems{
+    margin:0.25em;
+}
+
+
+.sectionText
+{
+    margin: 2em 1em 1em 1em;
+    font-size: 1.25em;
+    line-height: 1;
+    letter-spacing: 2px;
+    text-decoration:none;
+    white-space: normal;
+    font-weight: 500;
+    text-align: center;
+    color: black;
+}
+
+.sectionTextCompressed
+{
+    margin: .25em;
+    font-size: 1.25em;
+    line-height: 1;
+    letter-spacing: 2px;
+    text-decoration:none;
+    white-space: normal;
+    font-weight: 500;
+    text-align: center;
+    color: black;
+}
+
+.sectionContent:hover{
+    outline-style:solid;
+    outline-color:#F4A460;
+}
+.mainHeading:hover{
+    outline-style:solid;
+    outline-color:#F4A460;
+}
+
+#verticalVolcano{
+    height:12.5em;
+    width:30em;
+    border-radius: 10px;
+    border-style:solid;
+    border-color:#9DECE3;
+    border-width: .75em;
+}
+
+#verticalVolcano:hover{
+    outline-style:solid;
+    outline-color:#F4A460;
+}
+
+.columnLeft{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 10;
+    margin: 1em 2em 1em 1em;
+    padding:.75em .75em .75em .75em;
+    display:flex;
+    border-radius:10px;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #9DECE3;
+
+}
+
+.columnLeft:hover{
+    outline-style:solid;
+    outline-color:#F4A460;
+}
+
+.columnText{
+    margin: .25em;
+    font-size: 1em;
+    line-height: 1;
+    letter-spacing: 2px;
+    text-decoration:none;
+    white-space: normal;
+    font-weight: 500;
+    text-align: center;
+    color: black;
+}
+
+.columnList{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.leftHeading{
+    color:#FF4500;
+    font-size: 1.5em;
+    margin:0.25em;
+    padding:0.25em;
+}
+
+.columnRight{
+    grid-column-start: 8;
+    grid-column-end: 10;
+    grid-row-start: 2;
+    grid-row-end: 10;
+    margin: 1em 1em 1em 2em;
+    padding:.75em .75em .75em .75em;
+    display:flex;
+    border-radius:10px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #9DECE3;
+}
+
+li{
+    margin:1em;
+    list-style: none;
+    text-align: center;
+}
+ul{
+    margin:0em;
+    list-style: none;
+    text-align: center;
+}
+
+.rightHeading{
+    color:#FF4500;
+    font-size: 1.5em;
+    margin:0.25em;
+    padding:0.25em;
+}
+.columnRight:hover{
+    outline-style:solid;
+    outline-color:#F4A460;
+}
