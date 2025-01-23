@@ -61,7 +61,19 @@ html, body{
     background-color: #FF4500;
 }
 
-.headerButton:hover{
+#aboutTahiti{
+    background-color: #CC2200;
+    outline-style:solid;
+    outline-color:#F4A460;
+}
+
+#tourism{
+    background-color: #CC2200;
+    outline-style:solid;
+    outline-color:#F4A460;
+}
+
+#frequentlyAskedQuestions{
     background-color: #CC2200;
     outline-style:solid;
     outline-color:#F4A460;
